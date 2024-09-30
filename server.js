@@ -19,7 +19,9 @@ const compression = require('compression')
 
 
 
+
 const User=require('./routes/authuser');
+
 
 const Vole=require('./routes/vole');
 const VoleMain=require('./routes/voleMain');
@@ -53,6 +55,8 @@ app.use(compression())
 
 //tkhademlek file hetha 
 app.use(express.static(path.join(__dirname, 'uploads')));
+
+
 
 
 if (process.env.NODE_ENV === 'development') {
@@ -129,6 +133,8 @@ const server = app.listen(PORT, () => {
   console.log(`App running running on port ${PORT}`);
 });
 
+// Handle rejection outside express
+// Handle rejection outside express
 // Handle rejection outside express
 process.on('unhandledRejection', (err) => {
   console.error(`UnhandledRejection Errors: ${err.name} | ${err.message}`);
