@@ -54,7 +54,7 @@ app.use(compression())
 
 
 //tkhademlek file hetha 
-app.use(express.static(path.join(__dirname, 'uploads')));
+app.use('/voles', express.static(path.join(__dirname, 'uploads/voles')));
 
 
 
