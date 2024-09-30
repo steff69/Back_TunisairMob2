@@ -88,7 +88,7 @@ app.get('/api/s', (req,res)=>{
 );
 
 
-router.get( "/allUser",(res , req) =>{
+app.get( "/allUser",(res , req) =>{
   return res.status(404).json({ message: 'its ok' });
   
 }) ;
